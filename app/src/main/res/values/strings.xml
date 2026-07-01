@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BDK Jupiter Sensi</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_generate">Generate</string>
+    <string name="nav_advanced">Advanced</string>
+    <string name="nav_history">History</string>
+</resources>

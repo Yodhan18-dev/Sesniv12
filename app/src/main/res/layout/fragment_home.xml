@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="◈ DEVELOPER"
+            android:textColor="@color/neon_cyan"
+            android:textSize="13sp"
+            android:letterSpacing="0.2"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Dev Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDev"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/card_dark"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:src="@drawable/logo"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    android:background="@drawable/circle_clip"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BDK JUPITER"
+                    android:textColor="@color/neon_cyan"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Developer · Content Creator"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Odisha, India"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- YouTube -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYoutube"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="▶  YOUTUBE"
+                    android:textColor="@color/bg_dark"
+                    android:textStyle="bold"
+                    app:backgroundTint="#FF0000"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Instagram -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnInstagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="◉  INSTAGRAM"
+                    android:textColor="@color/bg_dark"
+                    android:textStyle="bold"
+                    app:backgroundTint="#E1306C"
+                    app:cornerRadius="10dp"
+                    android:layout_marginBottom="10dp" />
+
+                <!-- Discord -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDiscord"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:text="◈  DISCORD"
+                    android:textColor="@color/bg_dark"
+                    android:textStyle="bold"
+                    app:backgroundTint="#5865F2"
+                    app:cornerRadius="10dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- About App Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_dark"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⚡ ABOUT THIS APP"
+                    android:textColor="@color/neon_cyan"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BDK Jupiter Sensi Generator uses a custom formula developed by BDK JUPITER to generate the perfect Free Fire sensitivity settings based on your mobile device specifications.\n\nJust enter your device details and get your personalized settings instantly. Practice for 2 weeks for best results!\n\n⚠ For help and support, join our Discord server."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp"
+                    android:lineSpacingExtra="4dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

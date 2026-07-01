@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background gradient -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_bg_gradient" />
+
+    <!-- Background overlay -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#CC050D1A" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp"
+            android:paddingTop="80dp"
+            android:paddingBottom="80dp">
+
+            <!-- Round Logo -->
+            <FrameLayout
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginBottom="16dp">
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:background="@drawable/logo_round_bg" />
+
+                <ImageView
+                    android:layout_width="106dp"
+                    android:layout_height="106dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    android:background="@drawable/circle_clip" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BDK JUPITER"
+                android:textColor="#00BFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SENSI GENERATOR"
+                android:textColor="#1E90FF"
+                android:textSize="12sp"
+                android:letterSpacing="0.2"
+                android:layout_marginBottom="40dp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#CC0A1628"
+                app:cardCornerRadius="16dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔐 ENTER YOUR BDK KEY"
+                        android:textColor="#00BFFF"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="16dp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxStrokeColor="@color/input_stroke_color"
+                        app:hintTextColor="@color/input_hint_color">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="BDK-XXXX"
+                            android:textColor="@color/text_primary"
+                            android:textColorHint="@color/text_secondary"
+                            android:inputType="textVisiblePassword"
+                            android:textAllCaps="true" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tvError"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#FF4444"
+                        android:textSize="13sp"
+                        android:visibility="gone" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="20dp"
+                        android:text="⚡ UNLOCK"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.1"
+                        app:backgroundTint="#00BFFF"
+                        android:textColor="@color/bg_dark"
+                        app:cornerRadius="12dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="16dp"
+                        android:text="Each key works on ONE device only"
+                        android:textColor="@color/text_secondary"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Need a key? Join Discord → discord.gg/ztTfSavsf"
+                android:textColor="#1E90FF"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

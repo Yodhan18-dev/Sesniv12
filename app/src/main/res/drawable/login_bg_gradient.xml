@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#050D1A"
+                android:centerColor="#071428"
+                android:endColor="#0A1E3D"
+                android:angle="135"
+                android:type="linear" />
+        </shape>
+    </item>
+    <!-- Lightning bolt decorative lines -->
+    <item android:top="80dp" android:left="20dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#1500BFFF" />
+            <size android:width="2dp" android:height="120dp" />
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,2 @@
+-keep class com.bdkjupiter.sensi.data.** { *; }
+-keepattributes *Annotation*

@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⚡ SENSI GENERATOR"
+            android:textColor="@color/neon_cyan"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.15"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Input Form Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/card_dark"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Username -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="👤 Your Username"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile Name -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMobileName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="📱 Mobile Brand (e.g. Redmi, Samsung)"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile Model -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMobileModel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="🔧 Mobile Model (e.g. Note 12)"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="text" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- RAM -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etRam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="💾 RAM (GB) — 2, 3, 4, 6, 8, 12, 16"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Storage -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="12dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etStorage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="🗂 Storage (GB) — e.g. 64, 128, 256"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Mobile Age -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/input_stroke_color"
+                    app:hintTextColor="@color/input_hint_color"
+                    android:layout_marginBottom="16dp">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etMobileAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="📅 Phone Age (months since purchase)"
+                        android:textColor="@color/text_primary"
+                        android:textColorHint="@color/text_secondary"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Followed BDK Checkbox -->
+                <CheckBox
+                    android:id="@+id/cbFollowed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="✅ I have followed BDK JUPITER"
+                    android:textColor="@color/text_secondary"
+                    android:buttonTint="@color/neon_cyan"
+                    android:layout_marginBottom="20dp" />
+
+                <!-- Generate Button -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnGenerate"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="⚡ GENERATE"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.1"
+                    android:textColor="@color/bg_dark"
+                    app:backgroundTint="@color/neon_cyan"
+                    app:cornerRadius="14dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Practice Note -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#1A00FFFF"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="14dp"
+                android:text="⚠️  Keep practicing for 2 weeks to set ur hands on the sensi"
+                android:textColor="@color/neon_cyan"
+                android:textSize="13sp"
+                android:gravity="center" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Result Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="@color/card_dark"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎮 YOUR SETTINGS"
+                    android:textColor="@color/neon_cyan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_marginBottom="16dp" />
+
+                <TextView android:id="@+id/tvResultUsername"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/text_primary" android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/tvResultDevice"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:layout_marginBottom="4dp" />
+                <TextView android:id="@+id/tvResultRam"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:textColor="@color/text_secondary" android:textSize="13sp"
+                    android:layout_marginBottom="16dp" />
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginBottom="16dp" />
+
+                <!-- Result Rows -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🔴 General Sensitivity"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvGeneral"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/neon_cyan" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🔵 Red Dot Sensitivity"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvRedDot"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/neon_blue" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🔭 2x Scope Sensitivity"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tv2x"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/neon_green" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🔬 4x Scope Sensitivity"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tv4x"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/neon_green" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🎯 Sniper Scope Sensitivity"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvSniper"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#FF6B35" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="10dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="🔥 Fire Button Size"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvFireButton"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="#FF4444" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="20dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="📐 DPI (Smallest Width)"
+                        android:textColor="@color/text_secondary" android:textSize="13sp" />
+                    <TextView android:id="@+id/tvDpi"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:textColor="@color/neon_cyan" android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="@color/divider" android:layout_marginBottom="16dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="⚠️  This is the recommended sensi for your mobile. It will work best when you practice for some days. Any problem? Join Discord for help and support."
+                    android:textColor="@color/text_secondary"
+                    android:textSize="12sp"
+                    android:lineSpacingExtra="3dp"
+                    android:layout_marginBottom="16dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnCopyAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="📋 COPY ALL SETTINGS"
+                    android:textStyle="bold"
+                    android:textColor="@color/neon_cyan"
+                    app:backgroundTint="@color/card_dark_2"
+                    app:strokeColor="@color/neon_cyan"
+                    app:strokeWidth="1dp"
+                    app:cornerRadius="12dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>
